@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Bhuvan Bhatia">
+    <title>Bhuvan Bhatia - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Hey, I'm Bhuvan Bhatia</h1>
+            <h2>Web Developer</h2>
+            <p>Creative Designer & Programmer</p>
+        </div>
+    </header>
+
+    <!-- Navigation Buttons -->
+    <nav class="portfolio-nav">
+        <ul>
+            <li><a href="#bio" onclick="showSection('bio')">Bio</a></li>
+            <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+            <li><a href="#experience" onclick="showSection('experience')">Experience</a></li>
+            <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <section id="bio" class="content-section active">
+        <h2>About Me</h2>
+        <p>Hello, I'm Bhuvan Bhatia, a results-driven software engineering student graduating in 2024. With expertise in Python,
+            Object-Oriented Programming, and SQL, I am passionate about developing innovative software solutions. I look forward
+            to connecting with industry professionals to explore opportunities for collaboration and growth.</p>
+    </section>
+
+    <section id="skills" class="content-section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming in Python3, OOPS</li>
+            <li>SQL, MySQL Workbench</li>
+            <li>HTML, CSS, JavaScript (Basic)</li>
+            <li>Figma</li>
+            <li>VS Code</li>
+            <li>Android Studio</li>
+        </ul>
+    </section>
+
+    <section id="experience" class="content-section">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Minor Project: Disease Prediction</h3>
+            <p>Applied Support Vector Machine algorithm on a Kaggle dataset to predict diseases using Python.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Major Project: Safety and Security Jacket (IoT)</h3>
+            <p>Designed a jacket integrated with IoT for women's safety, using Bug Zapper Circuit, ESP8266, and GPS Module. The jacket provides security and is easy to use.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Cisco Virtual Internship</h3>
+            <p>Gained insights into networking fundamentals and practical skills during a two-week Cisco internship in April-June 2022.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Internship at OFK, Jabalpur</h3>
+            <p>Completed a two-week program focusing on practical engineering and safety protocols.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:bhuvanbhatia.bb@gmail.com">bhuvanbhatia.bb@gmail.com</a></p>
+        <p>Phone: 7000035321</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/bhuvan-bhatia-41603011b" target="_blank">linkedin.com/in/bhuvan-bhatia</a></p>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
